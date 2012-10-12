@@ -20,7 +20,7 @@
     %link{ :rel => "shortcut icon", :href => "/img/favicon.ico", :type => "image/x-icon" }
     %link{ :rel => 'stylesheet', :href => '/css/style.css' }
 
-    %script{ :src => '/js/vendor/modernizr-2.6.1.min.js' }
+    %script{ :src => '/js/modernizr.js' }
     %script{ :src => '//use.typekit.net/wtu2wmq.js' }
     %script try{Typekit.load();}catch(e){}
 
@@ -42,6 +42,14 @@
 
     -# Addition Footer stuff for your page (Usually, page-specific JS)
     = yield_content(:page_foot_additions)
+
+    %script{ :src => '/js/zepto.js' }
+
+    :javascript
+      $('.kuote').each(function(){
+        var $kuote = $(this).find('p');
+        $kuote.html($kuote.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+      })
 
     :javascript
       var _gaq=[['_setAccount','UA-35537881-1'],['_trackPageview']];
