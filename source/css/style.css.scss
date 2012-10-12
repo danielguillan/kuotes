@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import "settings";
+@import "prelude";
+
+@include responder-breakpoints( mobile 320px,
+								tablet 600px,
+								desktop 900px);
+
+body {
+	text-rendering: optimize-legibility;
+	background-color: #f5f3f1;
+	@include respond-to(tablet-and-up) {
+		font-size: 150%;
+	}
+}
+
+.wrapper {
+	max-width: 26em;
+	margin: 0 auto;
+}
+
+.masthead {
+	@include rhythm($padding-leader: 2, $padding-trailer: 2);
+	text-align: center;
+}
+
+blockquote {
+	@include margin-trailer(2);
+	@include padding-trailer(2);
+	border-bottom: solid 1px $line-color;
+}
