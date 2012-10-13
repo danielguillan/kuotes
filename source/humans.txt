@@ -1,0 +1,10 @@
+/* AUTHOR */
+Designer, Developer, Curator : Daniel Guillan
+Contact: hello [at] danielguillan.com
+Twitter: danielguillan
+Location: Barcelona, Spain
+
+/* PROJECT */
+Standards: HTML5, CSS3, JS
+Components: Middleman, SASS, Compass, Prelude, Modernizr, Zepto.js
+Software: Sublime Text 2
