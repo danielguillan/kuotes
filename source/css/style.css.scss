@@ -10,9 +10,14 @@
 body {
 	text-rendering: optimizeLegibility;
 	background-color: #f5f3f1;
+
 	@include respond-to(tablet-and-up) {
 		font-size: 150%;
 	}
+}
+
+a:hover {
+ text-decoration: none;
 }
 
 .wrapper {
@@ -23,6 +28,10 @@ body {
 .masthead {
 	@include rhythm($padding-leader: 2, $padding-trailer: 2);
 	text-align: center;
+}
+
+.logo {
+	color: $red;
 }
 
 blockquote {
@@ -36,7 +45,6 @@ blockquote {
 	padding: 1em;
 	opacity: .1;
 	&:hover {
-		text-decoration: none;
 		opacity: .75;
 	}
 }
