@@ -8,7 +8,7 @@
 								desktop 900px);
 
 body {
-	text-rendering: optimize-legibility;
+	text-rendering: optimizeLegibility;
 	background-color: #f5f3f1;
 	@include respond-to(tablet-and-up) {
 		font-size: 150%;
