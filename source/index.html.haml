@@ -1,4 +1,5 @@
--data.kuotes.each do |kuote|
+-data.kuotes.each_with_index do |kuote, i|
   %blockquote.kuote
-    %p&= kuote.kuote
-    %strong.source.milli&= kuote.author
+    %p.kuote__text&= kuote.kuote
+    %strong.kuote__source.source.milli&= kuote.author
+    %a.kuote__link.milli{ :href => '/kuote/' + i.to_s + '.html', :title => 'Link to this kuote'} ➥

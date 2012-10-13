@@ -27,6 +27,16 @@ body {
 
 blockquote {
 	@include margin-trailer(2);
-	@include padding-trailer(2);
-	border-bottom: solid 1px $line-color;
+}
+
+.kuote__link {
+	@include transition(opacity .1s ease-in-out);
+	display: inline-block;
+	margin-top: 1em;
+	padding: 1em;
+	opacity: .1;
+	&:hover {
+		text-decoration: none;
+		opacity: .75;
+	}
 }
