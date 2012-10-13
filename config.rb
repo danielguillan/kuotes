@@ -12,12 +12,10 @@ set :images_dir, 'img'
 
 data.kuotes.each_with_index do |k, i|
   # Generate kuote page
-  page "/kuote/#{i}.html", :proxy => "/kuote.html" do
+  page "/kuote/#{i}.html", :proxy => "kuote.html", :ignore => true do
     @kuote = k
   end
 end
-
-#puts authors
 
 # Build-specific configuration
 configure :build do
