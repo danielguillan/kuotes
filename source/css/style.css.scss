@@ -7,17 +7,24 @@
 								tablet 600px,
 								desktop 900px);
 
-body {
-	text-rendering: optimizeLegibility;
-	background-color: #f5f3f1;
-
+html {
 	@include respond-to(tablet-and-up) {
 		font-size: 150%;
 	}
 }
 
-a:hover {
- text-decoration: none;
+body {
+	text-rendering: optimizeLegibility;
+	background-color: #f5f3f1;
+
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
 }
 
 .wrapper {
@@ -41,7 +48,6 @@ blockquote {
 .kuote__link {
 	@include transition(opacity .1s ease-in-out);
 	display: inline-block;
-	margin-top: 1em;
 	padding: 1em;
 	opacity: .1;
 	&:hover {
