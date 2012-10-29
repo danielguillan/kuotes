@@ -3,12 +3,11 @@
 @import "settings";
 @import "prelude";
 
-@include responder-breakpoints( mobile 320px,
-								tablet 600px,
-								desktop 900px);
+@include responder-breakpoints( narrow 320px,
+								wide 600px);
 
 html {
-	@include respond-to(tablet-and-up) {
+	@include respond-to(wide-and-up) {
 		font-size: 150%;
 	}
 }
