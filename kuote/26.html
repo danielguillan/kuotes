@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <meta content='width=device-width, initial-scale = 1' name='viewport' />
+    <meta name='description' />
+    <title>Kuotes</title>
+    <link href='http://kuot.es/humans.txt' rel='author' type='text/plain' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <script src='/js/modernizr.js'></script>
+    <script src='//use.typekit.net/wtu2wmq.js'></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+  <body>
+    <div class='wrapper'>
+      <header class='masthead'>
+        <a class='logo kilo' href='/'>
+          Kuotes
+        </a>
+      </header>
+      <blockquote class='kuote'>
+        <p>If something is going to be better, it is new, and if it’s new you are confronting problems and challenges you don’t have references for. To solve and address those requires a remarkable focus. There’s a sense of being inquisitive and optimistic, and you don’t see those in combination very often.</p>
+        <strong class='source micro'>Jonathan Ive</strong>
+      </blockquote>
+      <footer class='cf'></footer>
+    </div>
+    
+    <script src='/js/zepto.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        $('.kuote').each(function(){
+          var $kuote = $(this).find('p');
+          $kuote.html($kuote.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+        })
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[['_setAccount','UA-35537881-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      //]]>
+    </script>
+  </body>
+</html>
