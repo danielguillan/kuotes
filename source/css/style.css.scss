@@ -19,6 +19,10 @@ body {
 
 }
 
+#{headings()} {
+	font-weight: normal;
+}
+
 a,
 a:hover,
 a:active,
@@ -42,6 +46,13 @@ p a {
 	@include respond-to(wide-and-up) {
 		@include rhythm($padding-leader: 2, $padding-trailer: 2);
 	}
+	text-align: center;
+}
+
+.page-header {
+	@include horizontal-borders(1px, .5);
+	@include margin-trailer(1);
+	border-color: $gray-light;
 	text-align: center;
 }
 
