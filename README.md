@@ -1,6 +1,6 @@
 #Kuotes
 
-[Kuot.es](http://quot.es) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
+[Kuot.es](http://kuot.es) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
 
 ## The idea
 
