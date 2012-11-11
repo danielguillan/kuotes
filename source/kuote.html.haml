@@ -1,3 +1,5 @@
+- content_for(:page_title, 'A quote by '+ @kuote.author + ' on '+ @kuote.tags)
+
 %blockquote.kuote
   %p&= @kuote.kuote
   %strong.source.micro&= @kuote.author
