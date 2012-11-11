@@ -1,10 +1,10 @@
 #Kuotes
 
-[Kuot.es](http://quot.es) is a growing collection of inspiring quotes about Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
+[Kuot.es](http://quot.es) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
 
 ## The idea
 
-I love to collect quotes about design. They inspire me, they give me strength and mental clarity. Some tools like Evernote and Gimmebar –amongst many others– are great for the job but they're not that good at displaying quotes in a **nice and readable manner**. I wanted a place with the right experience: **a clean and easy to read feed** with **beautiful typography**. No UI, no social sharing buttons, no ads, no distractions. Just clarity. That's why I created this site.
+I love to collect quotes on design. They inspire me, they give me strength and mental clarity. Some tools like Evernote and Gimmebar –amongst many others– are great for the job but they're not that good at displaying quotes in a **nice and readable manner**. I wanted a place with the right experience: **a clean and easy to read feed** with **beautiful typography**. No UI, no social sharing buttons, no ads, no distractions. Just clarity. That's why I created this site.
 
 ## Colophon
 
