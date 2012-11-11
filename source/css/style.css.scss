@@ -27,13 +27,21 @@ a:focus {
 	text-decoration: none;
 }
 
+p a {
+	border-bottom: 1px dotted $red;
+}
+
 .wrapper {
 	max-width: 26em;
 	margin: 0 auto;
+	padding: 0 1.25em;
 }
 
 .masthead {
-	@include rhythm($padding-leader: 2, $padding-trailer: 2);
+	@include rhythm($padding-leader: 1, $padding-trailer: 1);
+	@include respond-to(wide-and-up) {
+		@include rhythm($padding-leader: 2, $padding-trailer: 2);
+	}
 	text-align: center;
 }
 
@@ -41,8 +49,33 @@ a:focus {
 	color: $red;
 }
 
-blockquote {
+.main-nav {
+	position: absolute;
+	right: 1em;
+	top: 2em;
+}
+
+.main-nav__link {
+
+	@include transition(all .25s ease-in-out);
+	display: block;
+	padding: .15em .5em;
+	border-radius: 6px;
+	background: $red;
+	color: $white;
+	font-size: 75%;
+	opacity: .25;
+
+	&:hover {
+		color: $white;
+		opacity: .75;
+	}
+}
+
+.kuote {
 	@include margin-trailer(2);
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .kuote__link {
