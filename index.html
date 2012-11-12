@@ -180,10 +180,10 @@
     <script src='/js/zepto.js'></script>
     <script type='text/javascript'>
       //<![CDATA[
-        $('.kuote').each(function(){
-          var $kuote = $(this).find('p');
-          $kuote.html($kuote.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
-        })
+        $('.kuote__text').each(function(){
+          var $k = $(this);
+          $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+        });
       //]]>
     </script>
     <script type='text/javascript'>
