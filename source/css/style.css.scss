@@ -1,15 +1,30 @@
 @charset "utf-8";
+// =============================================================================
+// Kuotes
+//
+// Table of contents:
+// 1. Breakpoints
+// 2. Base
+// 3. Header
+// 4. Kuote
+// =============================================================================
 
-@import "settings";
-@import "prelude";
+@import "settings",
+		"prelude";
+
+// =============================================================================
+// 1. Breakpoints
+// =============================================================================
 
 @include responder-breakpoints( narrow 320px,
 								wide 600px);
 
+// =============================================================================
+// 2. Base
+// =============================================================================
+
 html {
-	@include respond-to(wide-and-up) {
-		font-size: 150%;
-	}
+	@include respond-to(wide-and-up) { font-size: 150%; }
 }
 
 body {
@@ -19,9 +34,8 @@ body {
 
 }
 
-#{headings()} {
-	font-weight: normal;
-}
+// Normal font weight for all headings
+#{headings()} { font-weight: normal; }
 
 a,
 a:hover,
@@ -31,9 +45,8 @@ a:focus {
 	text-decoration: none;
 }
 
-p a {
-	border-bottom: 1px dotted $red;
-}
+// Links inside paragraphs
+p a { border-bottom: 1px dotted $red; }
 
 .wrapper {
 	max-width: 26em;
@@ -41,12 +54,22 @@ p a {
 	padding: 0 1.25em;
 }
 
+// =============================================================================
+// 3. Header
+// =============================================================================
+
 .masthead {
 	@include rhythm($padding-leader: 1, $padding-trailer: 1);
+	text-align: center;
+
+	// Bigger vertical rhythm on wide screens
 	@include respond-to(wide-and-up) {
 		@include rhythm($padding-leader: 2, $padding-trailer: 2);
 	}
-	text-align: center;
+}
+
+.logo {
+	color: $red;
 }
 
 .page-header {
@@ -56,14 +79,10 @@ p a {
 	text-align: center;
 }
 
-.logo {
-	color: $red;
-}
-
 .main-nav {
 	position: absolute;
-	right: 1em;
 	top: 2em;
+	right: 1em;
 }
 
 .main-nav__link {
@@ -83,6 +102,11 @@ p a {
 	}
 }
 
+// =============================================================================
+// 4. Kuote
+// =============================================================================
+
+
 .kuote {
 	@include margin-trailer(2);
 	margin-left: 0;
@@ -94,7 +118,6 @@ p a {
 	display: inline-block;
 	padding: 1em;
 	opacity: .1;
-	&:hover {
-		opacity: .75;
-	}
+
+	&:hover { opacity: .75; }
 }
