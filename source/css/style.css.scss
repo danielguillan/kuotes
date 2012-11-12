@@ -113,6 +113,10 @@ p a { border-bottom: 1px dotted $red; }
 	margin-right: 0;
 }
 
+.kuote__source {
+	@extend .source;
+}
+
 .kuote__link {
 	@include transition(opacity .1s ease-in-out);
 	display: inline-block;
