@@ -1,9 +1,5 @@
 // =============================================================================
-// Settings
-// This partial contains all the configurable variables from the Prelude
-// framework. Uncomment and update these variables to fit your needs. If you
-// decide to go with the default value for a variable, comment it and restore
-// its original value
+// Prelude settings
 //
 // Table of contents:
 // 1. Base
@@ -21,160 +17,131 @@
 // =============================================================================
 
 //Border radius
-//$default-border-radius: 4px;
+$default-border-radius:     4px; // default: 4px
 
 // =============================================================================
 // 2. Colors
 // =============================================================================
 
 // Grays
-//$white:                     #fff;
-//$gray-lighter:              #ccc;
-//$gray-light:                #999;
-//$gray:                      #777;
-//$gray-dark:                 #555;
-$gray-darker:               #424242;
-$black:                     #000;
+$white:                     #fff; // default: #fff
+$gray-lighter:              #ccc; // default: #ccc
+$gray-light:                #999; // default: #999
+$gray:                      #777; // default: #777
+$gray-dark:                 #424242; // default: #555
+$gray-darker:               #333; // default: #333
+$black:                     #000; // default: #000
 
 // Accent Colors
-$red:                       #ef3438;
-//$green:                     #569564;
-//$blue:                      #36C;
-//$yellow:                    #fffbe4;
-//$orange:                    #f89406;
-//$pink:                      #fa5b7d;
-//$purple:                    #7a43b6;
+$red:                       #ef3438; // default: #9d261d
+$green:                     #9d261d; // default: #9d261d
+$blue:                      #36C; // default: #36C
+$yellow:                    #fffbe4; // default: #fffbe4
+$orange:                    #f89406; // default: #f89406
+$pink:                      #fa5b7d; // default: #fa5b7d
+$purple:                    #7a43b6; // default: #7a43b6
 
 // Link Colors
-$link-color:                $black;
-$link-hover-color:          $red;
+$link-color:                $black; // default: $blue
+$link-hover-color:          $red; // default: $pink
 
 // Text Colors
-//$base-text-color:           $gray-darker;
-//$strong-text-color:         $black;
-//$weak-text-color:           $gray;
-//$header-color:              $gray-lighter;
-//$blockquote-color:          $gray-lighter;
+$base-text-color:           $gray-darker; // default: $gray-darker
+$strong-text-color:         $black; // default: $black
+$weak-text-color:           $gray; // default: $gray
+$header-color:              $gray-lighter; // default: $gray-lighter
+$blockquote-color:          $gray-lighter; // default: $gray-lighter
 
 // Line & Border colors
-//$line-color: #e6e6e6;
+$line-color:                #e6e6e6; // default: #e6e6e6
 
 // =============================================================================
 // 3. Typography
 // =============================================================================
 
 // Vertical Rythm
-$base-font-size:            18px;
-$base-line-height:          27px;
+$base-font-size:            $base-font-size; // default: $base-font-size (from Compass)
+$base-line-height:          $base-line-height; // default: $base-line-height (From Compass)
 
-//$base-spacing-unit:         $base-line-height;
-//$half-spacing-unit:         $base-spacing-unit / 2;
-//$quarter-spacing-unit:      $half-spacing-unit / 2;
+$base-spacing-unit:         $base-line-height; // default: $base-line-height
+$half-spacing-unit:         $base-spacing-unit / 2; // default: $base-spacing-unit / 2
+$quarter-spacing-unit:      $half-spacing-unit / 2; // default: $half-spacing-unit / 2
 
 // Modular scale
-//$modular-scale-ratio:       minor-third();
+$modular-scale-ratio:       minor-third(); // default: minor-third()
 
 // Fonts
-$base-font-family:          "adobe-garamond-pro", Georgia, "Times New Roman", serif;
-//$alternate-font-family: Georgia, "Times New Roman", serif;
-//$headings-font-family: $base-font-family;
+$base-font-family:          "garamond-premier-pro", Georgia, "Times New Roman", serif; // default: "Helvetica Neue", Arial, sans-serif
+$alternate-font-family:     Georgia, "Times New Roman", serif; // default: Georgia, "Times New Roman", serif
+$headings-font-family:      $base-font-family; // default: $base-font-family
 
 // Brand
-//$brand-face: $base-font-family;
-//$brand-color: $black;
+$brand-face:                $base-font-family; // default: $base-font-family
+$brand-color: $black; // default: $black
 
 // Colors
-//$subheader-color: $gray-light;
-
-
-// Fonts
-// =============================================================================
-
-//$base-font-family:          "Helvetica Neue", Arial, sans-serif;
-//$alternate-font-family:     Georgia, "Times New Roman", serif;
-//$headings-font-family:      $alternate-font-family;
-
-// Colors
-//$subheader-color:           $gray-light;
+$subheader-color: $gray-light; // default: $gray-light
 
 // =============================================================================
 // 4. Forms
 // =============================================================================
 
-//$input-background:          $white;
-//$input-border:              #ccc;
-//$input-border-radius:       3px;
-//$input-disabled-background: $gray-lighter;
-//$form-actions-background:   #f5f5f5;
+$input-background:          $white; // default: $white
+$input-border:              #ccc; // default: #ccc
+$input-border-radius:       3px; // default: 3px
+$input-disabled-background: $gray-lighter; // default: $gray-lighter
+$form-actions-background:   #f5f5f5; // default: #f5f5f5
 
 // Form states and alerts
 // =============================================================================
 
-//$warning-text:              #c09853;
-//$warning-background:        #fcf8e3;
-//$warning-border:            darken(adjust-hue($warning-background, -10), 3%);
+$warning-text:              #c09853; // default: #c09853
+$warning-background:        #fcf8e3; // default: #fcf8e3
+$warning-border:            darken(adjust-hue($warning-background, -10), 3%); // default: darken(adjust-hue($warning-background, -10), 3%)
 
-//$error-text:                #b94a48;
-//$error-background:          #f2dede;
-//$error-border:              darken(adjust-hue($error-background, -10), 3%);
+$error-text:                #b94a48; // default: #b94a48
+$error-background:          #f2dede; // default: #f2dede
+$error-border:              darken(adjust-hue($error-background, -10), 3%); // default: darken(adjust-hue($error-background, -10), 3%)
 
-//$success-text:              #468847;
-//$success-background:        #dff0d8;
-//$success-border:            darken(adjust-hue($success-background, -10), 5%);
+$success-text:              #468847; // default: #468847
+$success-background:        #dff0d8; // default: #dff0d8
+$success-border:            darken(adjust-hue($success-background, -10), 5%); // default: darken(adjust-hue($success-background, -10), 5%)
 
-//$info-text:                 #3a87ad;
-//$info-background:           #d9edf7;
-//$info-border:               darken(adjust-hue($info-background, -10), 7%);
+$info-text:                 #3a87ad; // default: #3a87ad
+$info-background:           #d9edf7; // default: #d9edf7
+$info-border:               darken(adjust-hue($info-background, -10), 7%); // default: darken(adjust-hue($info-background, -10), 7%)
 
 // =============================================================================
 // 5. Tables
 // =============================================================================
 
-//$table-background:                  transparent;
-//$table-background-stripe:           dakren($white, 3%);
-//$table-background-hover:            dakren($white, 6%);
-//$table-border:                      $line-color;
+$table-background:          transparent; // default: transparent
+$table-background-stripe:   dakren($white, 3%); // default: dakren($white, 3%)
+$table-background-hover:    dakren($white, 6%); // default: dakren($white, 6%)
+$table-border:              $line-color; // default: $line-color
 
 // =============================================================================
 // 6. Buttons
 // =============================================================================
 
-//$btn-background:                    $white;
-//$btn-background-highlight:          darken($btn-background, 20%);
-//$btn-border:                        $gray-lighter;
+$btn-font-weight:           normal; // default: normal
+$btn-border-radius:         none; // default: none
 
-//$btn-use-gradient:                  false;
-//$btn-use-shadow:                    false;
+$btn-use-gradient:          false; // default: false
+$btn-use-shadow:            false; // default: false
 
-//$create-btn-styles:                 true;
+$create-btn-styles:         true; // default: true
 
-//$btn-primary-background:            $link-color;
-//$btn-primary-background-highlight:  adjust-hue($btn-primary-background, 15%);
-
-//$btn-info-background:               #5bc0de;
-//$btn-info-background-highlight:     #2f96b4;
-
-//$btn-success-background:            lighten($green, 15%);
-//$btn-success-background-highlight:  #51a351;
-
-//$btn-warning-background:            lighten($orange, 15%);
-//$btn-warning-background-highlight:  $btn-warning-background;
-
-//$btn-danger-background:             #ee5f5b;
-//$btn-danger-background-highlight:   #bd362f;
-
-//$btn-inverse-background:            $gray;
-//$btn-inverse-background-highlight:  $gray-darker;
-
-//$btn-shop-background:               #fcd99d;
-//$btn-shop-background-highlight:     #ffc869;
-
-//$btn-font-weight:                   normal;
-
-//$btn-border-radius:                 none;
+$btn-background:            #f1f1f1; // default: #f1f1f1
+$btn-primary-background:    $link-color; // default: $link-color
+$btn-info-background:       #5bc0de; // default: #5bc0de
+$btn-success-background:    lighten($green, 15%); // default: lighten($green, 15%)
+$btn-warning-background:    lighten($orange, 15%); // default: lighten($orange, 15%)
+$btn-danger-background:     #ee5f5b; // default: #ee5f5b
+$btn-inverse-background:    $gray; // default: $gray
 
 // =============================================================================
 // 7. Debug mode
 // =============================================================================
 
-//$debug-mode:                        false;
+$debug-mode:                false; // default: false
