@@ -9,7 +9,8 @@
 // 4. Kuote
 // =============================================================================
 
-@import "settings",
+@import "compass",
+		"settings",
 		"prelude",
 		"prelude/all";
 
@@ -24,15 +25,18 @@
 // 2. Base
 // =============================================================================
 
-html {
-	@include respond-to(wide-and-up) { font-size: 150%; }
-}
+@include respond-to(narrow-and-up)  { @include set-font-size(20px, 20px * 1.5);};
+@include respond-to(wide-and-up)  { @include set-font-size(24px, 24px * 1.5);};
 
 body {
 	text-rendering: optimizeLegibility;
-	background-color: #f1efe9;
+    background-color: #f1efe9;
 	border-top: solid 1em $black;
-
+    -moz-font-feature-settings: "liga=1, dlig=0";
+    -ms-font-feature-settings: "liga", "dlig" 0;
+    -webkit-font-feature-settings: "liga", "dlig" 0;
+    -o-font-feature-settings: "liga", "dlig" 0;
+    font-feature-settings: "liga", "dlig" 0;
 }
 
 // Normal font weight for all headings
