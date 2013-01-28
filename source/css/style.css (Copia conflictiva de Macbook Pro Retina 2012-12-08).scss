@@ -1,0 +1,127 @@
+@charset "utf-8";
+// =============================================================================
+// Kuotes
+//
+// Table of contents:
+// 1. Breakpoints
+// 2. Base
+// 3. Header
+// 4. Kuote
+// =============================================================================
+
+@import "settings",
+		"prelude",
+		"prelude/all";
+
+// =============================================================================
+// 1. Breakpoints
+// =============================================================================
+
+@include responder-breakpoints( narrow 320px,
+								wide 600px);
+
+// =============================================================================
+// 2. Base
+// =============================================================================
+
+html {
+	@include respond-to(wide-and-up) { font-size: 150%; }
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	background-color: #f1efe9;
+	border-top: solid 1em $black;
+
+}
+
+// Normal font weight for all headings
+#{headings()} { font-weight: normal; }
+
+a,
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+// Links inside paragraphs
+p a { border-bottom: 1px dotted $red; }
+
+.wrapper {
+	max-width: 26em;
+	margin: 0 auto;
+	padding: 0 1.25em;
+}
+
+// =============================================================================
+// 3. Header
+// =============================================================================
+
+.masthead {
+	@include rhythm($padding-leader: 1, $padding-trailer: 1);
+	text-align: center;
+
+	// Bigger vertical rhythm on wide screens
+	@include respond-to(wide-and-up) {
+		@include rhythm($padding-leader: 2, $padding-trailer: 2);
+	}
+}
+
+.logo {
+	color: $red;
+}
+
+.page-header {
+	@include horizontal-borders(1px, .5);
+	@include margin-trailer(1);
+	border-color: $gray-light;
+	text-align: center;
+}
+
+.main-nav {
+	position: absolute;
+	top: 2em;
+	right: 1em;
+}
+
+.main-nav__link {
+
+	@include transition(all .25s ease-in-out);
+	display: block;
+	padding: .15em .5em;
+	border-radius: 6px;
+	background: $red;
+	color: $white;
+	font-size: 75%;
+	opacity: .25;
+
+	&:hover {
+		color: $white;
+		opacity: .75;
+	}
+}
+
+// =============================================================================
+// 4. Kuote
+// =============================================================================
+
+.kuote {
+	@include margin-trailer(2);
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.kuote__source {
+	@extend .source;
+}
+
+.kuote__link {
+	@include transition(opacity .1s ease-in-out);
+	display: inline-block;
+	padding: 1em;
+	opacity: .1;
+
+	&:hover { opacity: .75; }
+}
