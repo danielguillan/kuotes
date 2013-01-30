@@ -51,7 +51,7 @@
     :javascript
       $('.kuote__text').each(function(){
         var $k = $(this);
-        $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+        $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&#160;$1'));
       });
 
     :javascript
