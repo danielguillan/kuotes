@@ -29,7 +29,7 @@
         <a class='main-nav__link' href='/about.html' title='Learn more about Kuotes and the author'>About</a>
       </nav>
       <blockquote class='kuote'>
-        <p class='kuote__text'>Details in typefaces are not to be seen but felt</p>
+        <p class='kuote__text'>Details in typefaces are not to be seen but felt.</p>
         <strong class='kuote__source micro'>Erik Spiekermann</strong>
       </blockquote>
       <footer class='cf'></footer>
@@ -40,7 +40,7 @@
       //<![CDATA[
         $('.kuote__text').each(function(){
           var $k = $(this);
-          $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+          $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&#160;$1'));
         });
       //]]>
     </script>
