@@ -42,6 +42,8 @@ GEM
       rb-inotify (~> 0.8.8)
       thor (~> 0.15.4)
       tilt (~> 1.3.1)
+    middleman-gh-pages (0.0.2)
+      rake (> 0.9.3)
     middleman-more (3.0.6)
       coffee-script (~> 2.2.0)
       coffee-script-source (~> 1.3.3)
@@ -71,7 +73,7 @@ GEM
     padrino-helpers (0.10.7)
       i18n (~> 0.6)
       padrino-core (= 0.10.7)
-    prelude-framework (0.0.6)
+    prelude-framework (0.0.8)
       compass (>= 0.12.2)
       compass-normalize (>= 1.4)
       modular-scale (>= 1.0.2)
@@ -120,4 +122,5 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.0.5)
+  middleman-gh-pages
   prelude-framework (= 0.0.8)
