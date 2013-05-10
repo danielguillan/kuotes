@@ -1,6 +1,8 @@
 require 'haml'
 
 require 'prelude-framework'
+require 'compass-normalize'
+require 'responder'
 
 compass_config do |config|
   config.output_style = :compact

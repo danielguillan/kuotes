@@ -10,9 +10,12 @@
 // =============================================================================
 
 @import "compass",
+		"normalize",
 		"settings",
 		"prelude",
-		"prelude/all";
+		"prelude/base",
+		"prelude/typography",
+		"responder";
 
 // =============================================================================
 // 1. Breakpoints
