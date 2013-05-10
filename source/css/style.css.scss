@@ -1,4 +1,3 @@
-@charset "utf-8";
 // =============================================================================
 // Kuotes
 //
@@ -7,11 +6,12 @@
 // 2. Base
 // 3. Header
 // 4. Kuote
+//
 // =============================================================================
 
 @import "compass",
 		"normalize",
-		"settings",
+		"prelude-settings",
 		"prelude",
 		"prelude/base",
 		"prelude/typography",
@@ -24,15 +24,14 @@
 @include responder-breakpoints( narrow 320px,
 								wide 600px);
 
+
 // =============================================================================
 // 2. Base
 // =============================================================================
 
-@include respond-to(narrow-and-up)  { @include set-font-size(20px, 20px * 1.5);};
 @include respond-to(wide-and-up)  { @include set-font-size(24px, 24px * 1.5);};
 
 body {
-	text-rendering: optimizeLegibility;
     background-color: #f1efe9;
 	border-top: solid 1em $black;
     -moz-font-feature-settings: "liga=1, dlig=0";
@@ -61,6 +60,7 @@ p a { border-bottom: 1px dotted $red; }
 	margin: 0 auto;
 	padding: 0 1.25em;
 }
+
 
 // =============================================================================
 // 3. Header
@@ -109,6 +109,7 @@ p a { border-bottom: 1px dotted $red; }
 		opacity: .75;
 	}
 }
+
 
 // =============================================================================
 // 4. Kuote

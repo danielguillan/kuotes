@@ -25,7 +25,7 @@ $default-border-radius:     4px; // default: 4px
 
 // Grays
 $white:                     #fff; // default: #fff
-$gray-lighter:              #ccc; // default: #ccc
+$gray-lighter:              #e9e9e9; // default: #ccc
 $gray-light:                #999; // default: #999
 $gray:                      #777; // default: #777
 $gray-dark:                 #424242; // default: #555
@@ -34,7 +34,7 @@ $black:                     #000; // default: #000
 
 // Accent Colors
 $red:                       #ef3438; // default: #9d261d
-$green:                     #9d261d; // default: #9d261d
+$green:                     #349D76; // default: #349D76
 $blue:                      #36C; // default: #36C
 $yellow:                    #fffbe4; // default: #fffbe4
 $orange:                    #f89406; // default: #f89406
@@ -53,22 +53,33 @@ $header-color:              $gray-lighter; // default: $gray-lighter
 $blockquote-color:          $gray-lighter; // default: $gray-lighter
 
 // Line & Border colors
-$line-color:                #e6e6e6; // default: #e6e6e6
+$line-color: #e6e6e6; // default: #e6e6e6
 
 // =============================================================================
 // 3. Typography
 // =============================================================================
 
 // Vertical Rythm
-$base-font-size:            $base-font-size; // default: $base-font-size (from Compass)
-$base-line-height:          $base-line-height; // default: $base-line-height (From Compass)
+$base-font-size:            20px; // default: $base-font-size (from Compass)
+$base-line-height:          $base-font-size * 1.5; // default: $base-line-height (From Compass)
 
 $base-spacing-unit:         $base-line-height; // default: $base-line-height
 $half-spacing-unit:         $base-spacing-unit / 2; // default: $base-spacing-unit / 2
 $quarter-spacing-unit:      $half-spacing-unit / 2; // default: $half-spacing-unit / 2
 
-// Modular scale
-$modular-scale-ratio:       minor-third(); // default: minor-third()
+// Typographic scale
+$giga:                      117px; // default 117px
+$mega:                      90px;  // default 90px
+$kilo:                      72px;  // default 72px
+$alpha:                     60px;  // default 60px
+$beta:                      48px;  // default 48px
+$gamma:                     36px;  // default 36px
+$delta:                     24px;  // default 24px
+$epsilon:                   21px;  // default 21px
+$zeta:                      18px;  // default 18px
+$milli:                     16px;  // default 16px
+$micro:                     14px;  // default 14px
+$nano:                      11px;  // default 11px
 
 // Fonts
 $base-font-family:          "adobe-garamond-pro", Georgia, "Times New Roman", serif; // default: "Helvetica Neue", Arial, sans-serif
@@ -77,10 +88,10 @@ $headings-font-family:      $base-font-family; // default: $base-font-family
 
 // Brand
 $brand-face:                $base-font-family; // default: $base-font-family
-$brand-color: $black; // default: $black
+$brand-color:               $green; // default: $black
 
 // Colors
-$subheader-color: $gray-light; // default: $gray-light
+$subheader-color:           $gray-light; // default: $gray-light
 
 // =============================================================================
 // 4. Forms
@@ -116,8 +127,8 @@ $info-border:               darken(adjust-hue($info-background, -10), 7%); // de
 // =============================================================================
 
 $table-background:          transparent; // default: transparent
-$table-background-stripe:   dakren($white, 3%); // default: dakren($white, 3%)
-$table-background-hover:    dakren($white, 6%); // default: dakren($white, 6%)
+$table-background-stripe:   #f1f1f1; // default: #f1f1f1
+$table-background-hover:    #f1f1f1; // default: #f1f1f1
 $table-border:              $line-color; // default: $line-color
 
 // =============================================================================
@@ -125,7 +136,7 @@ $table-border:              $line-color; // default: $line-color
 // =============================================================================
 
 $btn-font-weight:           normal; // default: normal
-$btn-border-radius:         none; // default: none
+$btn-border-radius:         6px; // default: none
 
 $btn-use-gradient:          false; // default: false
 $btn-use-shadow:            false; // default: false

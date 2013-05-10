@@ -3,5 +3,5 @@
 -data.kuotes.reverse.each_with_index do |kuote, i|
   %blockquote.kuote
     %p.kuote__text&= kuote.kuote
-    %strong.kuote__source.micro&= kuote.author
-    %a.kuote__link.micro{ :href => '/kuote/' + (data.kuotes.length - (i + 1)).to_s + '.html', :title => 'Link to this kuote'} ➥
+    %strong.kuote__source.zeta.flush--bottom&= kuote.author
+    %a.kuote__link.zeta.flush--bottom{ :href => '/kuote/' + (data.kuotes.length - (i + 1)).to_s + '.html', :title => 'Link to this kuote'} ➥
