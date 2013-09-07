@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale = 1' name='viewport'>
+    <title>Kuotes - A quote by Wolfgang Amadeus Mozart on philosophy</title>
+    <link href='http://kuot.es/humans.txt' rel='author' type='text/plain'>
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/css/style.css' rel='stylesheet'>
+    <script src='/js/modernizr.js'></script>
+    <script src='//use.typekit.net/wtu2wmq.js'></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+  <body>
+    <div class='wrapper'>
+      <header class='masthead'>
+        <a class='logo mega' href='/'>
+          Kuotes
+        </a>
+      </header>
+      <nav class='main-nav'>
+        <a class='main-nav__link' href='/about.html' title='Learn more about Kuotes and the author'>About</a>
+      </nav>
+      <blockquote class='kuote'>
+        <p class='kuote__text'>Be silent, if you choose; but when it is necessary, speak — and speak in such a way that people will remember it.</p>
+        <strong class='kuote__source zeta'>Wolfgang Amadeus Mozart</strong>
+      </blockquote>
+      <footer class='cf'></footer>
+    </div>
+    
+    <script src='/js/zepto.js'></script>
+    <script>
+      $('.kuote__text').each(function(){
+        var $k = $(this);
+        $k.html($k.html().replace(/\s([^\s<]+)\s*$/,'&#160;$1'));
+      });
+    </script>
+    <script>
+      var _gaq=[['_setAccount','UA-35537881-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>
