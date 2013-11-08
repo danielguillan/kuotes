@@ -1,6 +1,6 @@
 #Kuotes
 
-[Kuot.es](http://kuot.es) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
+Kuotes (currently offline) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
 
 ## The idea
 
@@ -8,7 +8,7 @@ I love to collect quotes on design. They inspire me, they give me strength and m
 
 ## Colophon
 
-[Kuotes](http://kuot.es "A collection of inpiring quotes on design") is built on [Middleman](http://middlemanapp.com// "Middleman – The static site generator behind kuot.es"), [Sass](http://sass-lang.com/ "SASS") + [Compass](http://compass-style.org/ "The Compass framework") and [Responder](https://github.com/danielguillan/responder "Responder - Magic media queries for your Compass project"). The type is set in Adobe Garamond Pro and is served by [Typekit](https://typekit.com/fonts/adobe-garamond-pro "Adobe Garamond Pro web font on Typekit"). The source code is available on [Github](https://github.com/danielguillan/kuotes "The Kuotes repo on Github").
+Kuotes is built on [Middleman](http://middlemanapp.com// "Middleman – The static site generator behind kuot.es"), [Sass](http://sass-lang.com/ "SASS") + [Compass](http://compass-style.org/ "The Compass framework") and [Responder](https://github.com/danielguillan/responder "Responder - Magic media queries for your Compass project"). The type is set in Adobe Garamond Pro and is served by [Typekit](https://typekit.com/fonts/adobe-garamond-pro "Adobe Garamond Pro web font on Typekit"). The source code is available on [Github](https://github.com/danielguillan/kuotes "The Kuotes repo on Github").
 
 ---
 
