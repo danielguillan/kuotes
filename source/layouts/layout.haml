@@ -12,11 +12,11 @@
 
     %title= content_for?(:page_title) ? 'Kuotes - ' + yield_content(:page_title) : 'Kuotes'
 
-    %link{ :rel => 'author', :href => 'http://kuot.es/humans.txt', :type => 'text/plain' }
-    %link{ :rel => "shortcut icon", :href => '/img/favicon.ico', :type => 'image/x-icon' }
-    %link{ :rel => 'stylesheet', :href => '/css/style.css' }
+    %link{ :rel => 'author', :href => 'humans.txt', :type => 'text/plain' }
+    %link{ :rel => "shortcut icon", :href => 'img/favicon.ico', :type => 'image/x-icon' }
+    %link{ :rel => 'stylesheet', :href => 'css/style.css' }
 
-    %script{ :src => '/js/modernizr.js' }
+    %script{ :src => 'js/modernizr.js' }
     %script{ :src => '//use.typekit.net/wtu2wmq.js' }
     %script try{Typekit.load();}catch(e){}
 
@@ -27,11 +27,11 @@
     .wrapper
 
       %header.masthead
-        %a.logo.mega{ :href => '/' }
+        %a.logo.mega{ :href => 'http://danielguillan.github.io/kuotes/' }
           Kuotes
 
       %nav.main-nav
-        %a.main-nav__link{ :href => '/about.html', title: 'Learn more about Kuotes and the author' }About
+        %a.main-nav__link{ :href => 'about.html', title: 'Learn more about Kuotes and the author' }About
 
       -# Page content
       = yield
@@ -41,7 +41,7 @@
     -# Addition Footer stuff for your page (Usually, page-specific JS)
     = yield_content(:page_foot_additions)
 
-    %script{ :src => '/js/zepto.js' }
+    %script{ :src => 'js/zepto.js' }
 
     :javascript
       $('.kuote__text').each(function(){
