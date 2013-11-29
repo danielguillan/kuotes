@@ -1,6 +1,6 @@
 #Kuotes
 
-Kuotes (currently offline) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
+[Kuotes](http://danielguillan.github.io/kuotes/) is a growing collection of inspiring quotes on Design, Minimalism, Simplicity, Focus, … curated by [Daniel Guillan](http://danielguillan.com).
 
 ## The idea
 
