@@ -12,9 +12,9 @@
 
     %title= content_for?(:page_title) ? 'Kuotes - ' + yield_content(:page_title) : 'Kuotes'
 
-    %link{ :rel => 'author', :href => 'humans.txt', :type => 'text/plain' }
-    %link{ :rel => "shortcut icon", :href => 'img/favicon.ico', :type => 'image/x-icon' }
-    %link{ :rel => 'stylesheet', :href => 'css/style.css' }
+    %link{ :rel => 'author', :href => '/kuotes/humans.txt', :type => 'text/plain' }
+    %link{ :rel => "shortcut icon", :href => '/kuotes/img/favicon.ico', :type => 'image/x-icon' }
+    %link{ :rel => 'stylesheet', :href => '/kuotes/css/style.css' }
 
     %script{ :src => 'js/modernizr.js' }
     %script{ :src => '//use.typekit.net/wtu2wmq.js' }
@@ -41,7 +41,7 @@
     -# Addition Footer stuff for your page (Usually, page-specific JS)
     = yield_content(:page_foot_additions)
 
-    %script{ :src => 'js/zepto.js' }
+    %script{ :src => '/kuotes/js/zepto.js' }
 
     :javascript
       $('.kuote__text').each(function(){
